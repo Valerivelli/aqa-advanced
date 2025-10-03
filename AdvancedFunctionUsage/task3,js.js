@@ -1,37 +1,34 @@
 function divide(numerator, denominator) {
     if (typeof numerator !== "number" || typeof denominator !== "number") {
-        console.log("Error: Both arguments must be numbers");
-        return;
+        throw new Error("Both arguments must be numbers");
     }
 
     if (denominator === 0) {
-        console.log("Error: Division by zero is impossible");
-        return;
+        throw new Error("Denominator cannot be zero");
     }
-
-    console.log("Result: ", numerator / denominator);
+    return numerator / denominator;
 }
 
 try {
-    divide(10, 2);
+    console.log("Result:", divide(10, 2));
 } catch (error) {
-    console.log(error.message);
+    console.error("Error:", error.message);
 } finally {
     console.log("Робота завершена");
 }
 
 try {
-    divide(8, 0);
+    console.log("Result:", divide(8, 0));
 } catch (error) {
-    console.log(error.message);
+    console.error("Error:", error.message);
 } finally {
     console.log("Робота завершена");
 }
 
 try {
-    divide("qwe", 5);
+    console.log("Result:", divide("qwe", 2));
 } catch (error) {
-    console.log(error.message);
+    console.error("Error:", error.message);
 } finally {
     console.log("Робота завершена");
 }
