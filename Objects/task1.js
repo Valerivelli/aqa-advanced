@@ -1,7 +1,8 @@
-const student = {
-    firstName: "John",
-    lastName: "Smith",
-    age: 33,
-    courses: ["Math", "Programming", "History"]
-}
+const student = {}
+
+student.firstName = "John";
+student.lastName = "Smith";
+student.age = 33;
+student.courses = ["Math", "Programming", "History"];
+
 console.log(student);
