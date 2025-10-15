@@ -1,4 +1,4 @@
-class toDoService {
+class ToDoService {
     async getToDo() {
         try {
             const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
@@ -13,7 +13,7 @@ class toDoService {
     }
 }
 
-class userService {
+class UserService {
     async getUser() {
         try {
             const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
@@ -29,8 +29,8 @@ class userService {
 }
 
 async function runRequests() {
-    const todoService = new toDoService();
-    const usService = new userService();
+    const todoService = new ToDoService();
+    const usService = new UserService();
     try {
         const [todo, user] = await Promise.all([todoService.getToDo(), usService.getUser()]);
         console.log("Result Promise.all:");
