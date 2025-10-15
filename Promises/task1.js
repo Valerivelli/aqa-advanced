@@ -1,5 +1,5 @@
-function printWithDelay(text, ms) {
-    setTimeout(() => console.log(text), ms);
+function printWithDelay(text, delay) {
+    setTimeout(() => console.log(text), delay);
 }
 
 printWithDelay('Task 1 completed!', 3000);
