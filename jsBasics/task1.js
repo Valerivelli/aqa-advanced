@@ -1,4 +1,4 @@
-const str = "It`s my third homework. Wow!";
+const str = 'It`s my third homework. Wow!';
 const number = 5;
 const bool = true;
 const nullValue = null;
