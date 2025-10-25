@@ -1,6 +1,6 @@
 const radius = 5;
 const height = 14;
-let cylinderVolume = (
+const cylinderVolume = (
   Math.PI *
   radius ** 2 *
   height
